@@ -29,17 +29,30 @@ module.exports = function(app, passport, db, multer) {
       res.render('forum.ejs');
     })
 
+    app.get('/forumcat', function(req, res) {
+      res.render('forumcat.ejs')
+    })
+
+    app.get('/forumtop', function(req, res) {
+      res.render('forumtop.ejs')
+    })
+
+    app.get('/forumpost', function(req, res) {
+      res.render('forumpost.ejs')
+    })
+
     app.get('/knowledge.ejs', isLoggedIn, function(req, res) {
       res.render('knowledge.ejs')
     })
 
-// message board routes ===============================================================
+// Discussion Forum Routes ===============================================================
 
-    app.post('/messages', (req, res) => {
-      db.collection('messages').save({name: req.body.name, msg: req.body.msg, thumbUp: 0, thumbDown:0}, (err, result) => {
+    app.post('/topic', (req, res) => {
+      db.collection('topics').insertOne({topic: req.body.topic, comment: req.body.comment, upVotes: 0, date: Date.now()}, (err, result) => {
         if (err) return console.log(err)
+        console.log(req.body)
         console.log('saved to database')
-        res.redirect('/profile')
+        res.redirect('/forumPost')
       })
     })
 

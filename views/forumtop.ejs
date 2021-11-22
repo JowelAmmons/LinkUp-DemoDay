@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <title>Forum - Post</title>
@@ -22,7 +23,8 @@
   <body>
     <nav class="navbar navbar-dark bg-dark">
       <div class="container">
-        <h1><a href="index.html" class="navbar-brand">Forum</a></h1>
+        <h1><a href="/forum" class="navbar-brand">Forum</a></h1>
+        <h1><a href="/" class="navbar-brand">Menu</a></h1>
         <form class="form-inline">
           <input type="text" class="form-control mr-3 mb-2 mb-sm-0" placeholder="Search">
           <button type="submit" class="btn btn-primary">Search</button>
@@ -31,9 +33,9 @@
     </nav>
     <div class="container my-3">
       <nav class="breadcrumb">
-        <a href="index.html" class="breadcrumb-item">Board index</a>
-        <a href="overview-forum-category.html" class="breadcrumb-item">Forum category</a>
-        <a href="overview-topics.html" class="breadcrumb-item">Forum name</a>
+        <a href="/forum" class="breadcrumb-item">Board index</a>
+        <a href="/forumcat" class="breadcrumb-item">Forum category</a>
+        <a href="/forumtop" class="breadcrumb-item">Forum name</a>
         <span class="breadcrumb-item active">Forum post title with a complex and long question</span>
       </nav>
       <div class="row">
@@ -62,7 +64,7 @@
                   <div><span class="font-weight-bold">Posts:</span><br>123</div>
                 </td>
                 <td>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat auctor enim eu blandit. Aliquam consequat tortor sit amet velit consectetur, eu sollicitudin orci posuere. Integer at varius massa, at aliquam velit. Suspendisse eu pellentesque libero, vel suscipit felis. Sed non eros non purus sollicitudin ullamcorper sit amet ut dolor. Curabitur ac nisi nunc. Suspendisse porta ac eros vitae dapibus. Donec a metus a purus rutrum rutrum ac ac ipsum. Ut vulputate facilisis nisi, in imperdiet dolor suscipit eget. Suspendisse ultricies mauris quis ex pellentesque ultricies. Duis a purus nec risus condimentum pellentesque at at enim.<p/>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat auctor enim eu blandit. Aliquam consequat tortor sit amet velit consectetur, eu sollicitudin orci posuere. Integer at varius massa, at aliquam velit. Suspendisse eu pellentesque libero, vel suscipit felis. Sed non eros non purus sollicitudin ullamcorper sit amet ut dolor. Curabitur ac nisi nunc. Suspendisse porta ac eros vitae dapibus. Donec a metus a purus rutrum rutrum ac ac ipsum. Ut vulputate facilisis nisi, in imperdiet dolor suscipit eget. Suspendisse ultricies mauris quis ex pellentesque ultricies. Duis a purus nec risus condimentum pellentesque at at enim.</p>[]>
                   <p>In aliquet lorem eget eleifend faucibus. Praesent pellentesque vel arcu ut egestas. Mauris mauris risus, scelerisque quis consectetur suscipit, sollicitudin vitae tortor. Proin eget commodo libero, sit amet tempus lorem. Sed bibendum eros arcu, ac semper lorem porta a. Curabitur accumsan risus aliquam, mattis leo eu, fringilla nibh. Aenean luctus condimentum purus in fringilla. Vivamus a diam dolor. Fusce iaculis scelerisque urna, nec ultrices urna.</p>
                 </td>
               </tr>
@@ -85,7 +87,7 @@
                   <div><span class="font-weight-bold">Posts:</span><br>123</div>
                 </td>
                 <td>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat auctor enim eu blandit. Aliquam consequat tortor sit amet velit consectetur, eu sollicitudin orci posuere. Integer at varius massa, at aliquam velit. Suspendisse eu pellentesque libero, vel suscipit felis. Sed non eros non purus sollicitudin ullamcorper sit amet ut dolor. Curabitur ac nisi nunc. Suspendisse porta ac eros vitae dapibus. Donec a metus a purus rutrum rutrum ac ac ipsum. Ut vulputate facilisis nisi, in imperdiet dolor suscipit eget. Suspendisse ultricies mauris quis ex pellentesque ultricies. Duis a purus nec risus condimentum pellentesque at at enim.<p/>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat auctor enim eu blandit. Aliquam consequat tortor sit amet velit consectetur, eu sollicitudin orci posuere. Integer at varius massa, at aliquam velit. Suspendisse eu pellentesque libero, vel suscipit felis. Sed non eros non purus sollicitudin ullamcorper sit amet ut dolor. Curabitur ac nisi nunc. Suspendisse porta ac eros vitae dapibus. Donec a metus a purus rutrum rutrum ac ac ipsum. Ut vulputate facilisis nisi, in imperdiet dolor suscipit eget. Suspendisse ultricies mauris quis ex pellentesque ultricies. Duis a purus nec risus condimentum pellentesque at at enim.</p>>
                   <img src="https://placehold.it/600x400" class="img-fluid">
                   <p>In aliquet lorem eget eleifend faucibus. Praesent pellentesque vel arcu ut egestas. Mauris mauris risus, scelerisque quis consectetur suscipit, sollicitudin vitae tortor. Proin eget commodo libero, sit amet tempus lorem. Sed bibendum eros arcu, ac semper lorem porta a. Curabitur accumsan risus aliquam, mattis leo eu, fringilla nibh. Aenean luctus condimentum purus in fringilla. Vivamus a diam dolor. Fusce iaculis scelerisque urna, nec ultrices urna.</p>
                 </td>
@@ -137,15 +139,15 @@
     <footer class="small bg-dark text-white">
       <div class="container py-4">
         <ul class="list-inline mb-0 text-center">
-          <li class="list-inline-item">&copy; 2017 Web Company, Inc.</li>
+          <li class="list-inline-item">&copy; 2021 Black Owned and Created.</li>
           <li class="list-inline-item">All rights reserved.</li>
-          <li class="list-inline-item"><a href="#">Terms of use and privacy policy</a>.</li>
+          <li class="list-inline-item"><a href="#">Trading disclaimer</a>.</li>
         </ul>
       </div>
     </footer>
 
     <!-- jQuery first, then Bootstrap JS -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
   </body>
 </html>
