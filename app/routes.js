@@ -1,4 +1,4 @@
-module.exports = function(app, passport, db) {
+module.exports = function(app, passport, db, multer) {
 
 // normal routes ===============================================================
 
@@ -23,6 +23,15 @@ module.exports = function(app, passport, db) {
         req.logout();
         res.redirect('/');
     });
+
+    // FORUM 
+    app.get('/forum', function(req, res) {
+      res.render('forum.ejs');
+    })
+
+    app.get('/knowledge.ejs', isLoggedIn, function(req, res) {
+      res.render('knowledge.ejs')
+    })
 
 // message board routes ===============================================================
 
@@ -113,5 +122,3 @@ function isLoggedIn(req, res, next) {
 
     res.redirect('/');
 }
-
-//set up app.get to see connect/local/ 

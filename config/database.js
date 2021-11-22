@@ -1,7 +1,6 @@
 // config/database.js
 module.exports = {
 
-    'url' : 'mongodb+srv://morphius:Checkmate5248!@cluster0.2dgsk.mongodb.net/LinkUpLogin?retryWrites=true&w=majority', 
-    'dbName': 'Login'
+    'url' : 'mongodb+srv://demo:demo@cluster0.q2ojb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', 
+    'dbName': 'demo'
 };
-
