@@ -24,6 +24,11 @@ module.exports = function(app, passport, db, multer) {
         res.redirect('/');
     });
 
+    //Learn *Free*
+    app.get('/learn', function(req, res) {
+      res.render('learn.ejs');
+    })
+
     // FORUM 
     app.get('/forum', function(req, res) {
       res.render('forum.ejs');
@@ -48,13 +53,18 @@ module.exports = function(app, passport, db, multer) {
 // Discussion Forum Routes ===============================================================
 
     app.post('/topic', (req, res) => {
-      db.collection('topics').insertOne({topic: req.body.topic, comment: req.body.comment, upVotes: 0, date: Date.now()}, (err, result) => {
+      let time = (new Date()).toLocaleString();
+      db.collection('topics').insertOne({topic: req.body.topic, comment: req.body.comment, upVotes: 0, time,}, (err, result) => {
         if (err) return console.log(err)
         console.log(req.body)
         console.log('saved to database')
+        alert('posted')
         res.redirect('/forumPost')
       })
     })
+
+
+
 
     app.put('/messages', (req, res) => {
       db.collection('messages')
