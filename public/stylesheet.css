@@ -1,0 +1,24 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+}
+img{
+  height: 200px;
+}
+/***********forum Code************/
+.forum.table > tbody > tr > td {
+  vertical-align: middle;
+}
+
+.forum .fa {
+  width: 1em;
+  text-align: center;
+}
+
+.forum.table th.cell-stat {
+  width: 6em;
+}
+
+.forum.table th.cell-stat-2x {
+  width: 14em;
+}

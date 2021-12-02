@@ -1,0 +1,66 @@
+body{
+  background-color: rgb(0, 0, 0);
+  background-image: radial-gradient(
+    650px circle at 0% 0%,
+  hsl(216, 59%, 7%) 15%,
+  hsl(214, 78%, 2%) 35%,
+  hsl(214, 88%, 3%) 75%,
+  hsl(214, 100%, 1%) 80%,
+    transparent 100%
+  ),
+  radial-gradient(
+    1250px circle at 100% 100%,
+  hsl(0, 0%, 0%) 15%,
+  hsl(220, 100%, 1%) 35%,
+  hsl(220, 100%, 1%) 75%,
+  hsl(210, 100%, 2%) 80%,
+    transparent 100%
+  );
+}
+
+h1{
+  color: rgb(255, 255, 255);
+}
+h5{
+  color: rgb(255, 255, 255);
+}
+p{
+  color: rgb(250, 251, 253);
+}
+
+.btn{
+  border-radius: 20px;
+}
+
+#card-custom{
+  width: 350px;
+  height: 500px;
+  background: hsla(0, 4%, 75%, 0.15);
+  backdrop-filter: blur(30px);
+}
+
+.fade{
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  padding: auto;
+  animation-name: fade-in;
+}
+
+.animation-delay-small{
+  animation-delay: 0.15s;
+}
+.animation-delay-medium{
+  animation-delay: 0.3s;
+}
+.animation-delay-large{
+  animation-delay: 0.8s;
+}
+
+@keyframes fadein {
+  0%{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
